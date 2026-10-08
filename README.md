@@ -27,7 +27,7 @@ Every day has its own folder with notes and exercises.
 | Day | Topic | Folder |
 |-----|-------|--------|
 | 01 | JavaScript fundamentals | [day-01](WEEK-01/day-01) |
-
+| 02 | Loops and array methods | [day-02](WEEK-01/day-02) |
 ## 🏁 Final Project
 
 University Clinic API with authentication, authorization, PostgreSQL, validation,
