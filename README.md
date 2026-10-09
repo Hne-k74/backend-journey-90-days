@@ -29,7 +29,8 @@ Every day has its own folder with notes and exercises.
 | 01 | JavaScript fundamentals | [day-01](WEEK-01/day-01) |
 | 02 | Loops and array methods | [day-02](WEEK-01/day-02) |
 | 03 | Destructuring, spread, reduce | [day-03](WEEK-01/day-03) |
-| 04 |  `process.argv`, CLI, Input Validation, `switch`,  | [day-04](WEEK-01/day-04) |
+| 04 | CLI, Input Validation,`switch`,| [day-04](WEEK-01day-04) |
+| 05 | JSON, fs module, file storage | [day-05](WEEK-01/day-05) |
 
 ## 🏁 Final Project
 
