@@ -1,0 +1,27 @@
+[
+  {
+    "id": 1,
+    "name": "Henok",
+    "cgpa": 3.8
+  },
+  {
+    "id": 2,
+    "name": "Lucinda",
+    "cgpa": 3.4
+  },
+  {
+    "id": 3,
+    "name": "Jacob",
+    "cgpa": 3.53
+  },
+  {
+    "id": 4,
+    "name": "Tamara",
+    "cgpa": 3.65
+  },
+  {
+    "id": 5,
+    "name": "Mark",
+    "cgpa": 3.2
+  }
+]
