@@ -32,6 +32,7 @@ Every day has its own folder with notes and exercises.
 | 04 | CLI, Input Validation,`switch`,| [day-04](WEEK-01day-04) |
 | 05 | JSON, fs module, file storage | [day-05](WEEK-01/day-05) |
 | 06 | Student CLI with file storage | [day-06](WEEK-01/day-06) |
+| 07 | try/catch, safer loadStudents | [day-07](WEEK-01/day-07) |
 
 ## 🏁 Final Project
 
