@@ -35,7 +35,7 @@ Every day has its own folder with notes and exercises.
 | 07 | try/catch, safer loadStudents | [day-07](WEEK-01/day-07) |
 | 08 | Express server, routes, JSON | [day-08](WEEK-02/day-08) |
 | 09 | HTTP, curl, POST, validation | [day-09](WEEK-02/day-09) |
-
+| 10 | DELETE, PUT, full CRUD | [day-10](WEEK-02/day-10) |
 
 ## 🏁 Final Project
 
