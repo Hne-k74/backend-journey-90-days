@@ -1,0 +1,85 @@
+const express = require("express");
+const router = express.Router();
+const { loadStudents, addStudent, deleteStudent, updateCgpa } = require("../store");
+
+router.get("/", (req, res) => {
+  res.json(loadStudents());
+});
+
+router.get("/:id", (req, res) => {
+  const id = Number(req.params.id);
+
+  if (Number.isNaN(id)) {
+    return res.status(400).json({ message: "Id must be a number" });
+  }
+
+  const student = loadStudents().find((s) => s.id === id);
+
+  if (!student) {
+    return res.status(404).json({ message: "Student not found" });
+  }
+
+  res.json(student);
+});
+
+
+router.post("/", (req, res) => {
+  const { id, name, cgpa } = req.body;
+
+  if (typeof id !== "number" || !name || typeof cgpa !== "number") {
+    return res.status(400).json({ message: "id, name and cgpa are required" });
+  }
+
+  const ok = addStudent({ id, name, cgpa });
+
+  if (!ok) {
+    return res.status(409).json({ message: "Student already exists" });
+  }
+
+  res.status(201).json({ message: "Student saved!", data: { id, name, cgpa } });
+});
+
+router.delete("/:id", (req, res) => {
+  const id = Number(req.params.id);
+
+  if (Number.isNaN(id)) {
+    return res.status(400).json({
+      message: "Id must be a number",
+    });
+  }
+
+  const ok = deleteStudent(id);
+
+  if (!ok) {
+    return res.status(404).json({
+      message: "Student not found",
+    });
+  }
+
+  res.json({ message: "Student deleted" });
+});
+
+
+router.put("/:id", (req, res) => {
+  const id = Number(req.params.id);
+  const { cgpa } = req.body;
+
+  if (Number.isNaN(id) || typeof cgpa !== "number") {
+    return res.status(400).json({
+      message: "Valid id and cgpa are required",
+    });
+  }
+
+  const ok = updateCgpa(id, cgpa);
+
+  if (!ok) {
+    return res.status(404).json({
+      message: "Student not found",
+    });
+  }
+
+  res.json({ message: "Student updated" });
+});
+
+module.exports = router;
+
