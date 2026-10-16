@@ -36,6 +36,7 @@ Every day has its own folder with notes and exercises.
 | 08 | Express server, routes, JSON | [day-08](WEEK-02/day-08) |
 | 09 | HTTP, curl, POST, validation | [day-09](WEEK-02/day-09) |
 | 10 | DELETE, PUT, full CRUD | [day-10](WEEK-02/day-10) |
+| 11 | Express Router, organized routes | [day-11](WEEK-02/day-11) |
 
 ## 🏁 Final Project
 
